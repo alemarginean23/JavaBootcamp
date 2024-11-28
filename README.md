@@ -91,4 +91,23 @@ Enter product name: sneakers
 Enter product price: 50
 Enter product quantity: 5
 Product added to inventory.
+```
+### **2. Viewing inventory:**
+```plaintexr
+Shoe Product: sneakers - Price: 50.0 - Quantity: 5
+```
+### **3. Removing Product Quantity:**
+```plaintexr
+Enter product name to remove: sneakers
+Enter quantity to remove: 2
+Removed 2 from the quantity of 'sneakers'.
+
+```
+### **4. Removing a Product Entirely:**
+```plaintexr
+Enter product name to remove: sneakers
+Enter quantity to remove: 3
+Product 'sneakers' has been removed from the inventory.
+
+```
 
