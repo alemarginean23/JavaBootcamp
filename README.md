@@ -24,4 +24,71 @@ A simple Java application to simulate a store's inventory management system. The
    - **How It Works:** 
      - The `StoreController` class acts as the controller that interacts with the user. It uses the `ProductService` class for business logic and the `ProductRepository` class to store and retrieve product data.
 
+# Store Inventory App - Package and Class Explanation
+
+## 1. Model Package
+### Classes:
+- **`Product` (Abstract Class):**  
+  The base class for all products, containing attributes like `name`, `price`, and `quantity`.
+
+- **`Electronics`, `Clothing`, `Shoe` (Subclasses):**  
+  Concrete implementations of `Product`, each representing a specific product type.
+
+- **`Inventory`:**  
+  A singleton class that holds the list of products. Provides methods to add, remove, and retrieve products.
+
+### Purpose:  
+Encapsulates data and domain-specific logic for products and inventory.
+
+---
+
+## 2. Controller Package
+### Classes:
+- **`StoreController`:**  
+  Handles user commands by interacting with `ProductService` to perform actions like adding, viewing, or removing products.
+
+### Purpose:  
+Bridges the user interface (`StoreView`) and the service layer (`ProductService`).
+
+---
+
+## 3. Service Package
+### Classes:
+- **`ProductService`:**  
+  Contains business logic for adding products, checking inventory, and removing products or quantities.
+
+### Purpose:  
+Acts as a middle layer that processes user commands and interacts with the repository.
+
+---
+
+## 4. Repository Package
+### Classes:
+- **`ProductRepository`:**  
+  Stores and retrieves product data. Maintains the inventory as a list of products.
+
+### Purpose:  
+Provides an abstraction for data storage and retrieval.
+
+---
+
+## 5. View (Entry Point)
+### Classes:
+- **`StoreView`:**  
+  The user interface layer that provides the menu, collects user inputs, and interacts with the controller to perform actions.
+
+### Purpose:  
+Handles user interactions and displays results.
+
+---
+
+## Example Usage
+
+### **1. Adding a Product:**
+```plaintext
+Enter product type (electronics/clothing/shoe): shoe
+Enter product name: sneakers
+Enter product price: 50
+Enter product quantity: 5
+Product added to inventory.
 
