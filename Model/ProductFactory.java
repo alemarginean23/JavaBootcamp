@@ -8,7 +8,7 @@ public class ProductFactory {
             case "clothing":
                 return new Clothing(name, price, quantity);
             case "shoe":
-                return new Shoe(name, price, quantity); // Now using the Shoe class with quantity
+                return new Shoe(name, price, quantity); 
             default:
                 throw new IllegalArgumentException("Invalid product type");
         }
