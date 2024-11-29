@@ -20,7 +20,7 @@ public class StoreView {
             System.out.println("3. Remove Product from Inventory");
             System.out.println("4. Exit");
             int choice = scanner.nextInt();
-            scanner.nextLine();  // Consume newline
+            scanner.nextLine();
 
             switch (choice) {
                 case 1:
