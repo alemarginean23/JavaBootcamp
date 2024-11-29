@@ -3,7 +3,7 @@ package org.example.Model;
 public abstract class Product {
     protected String name;
     protected double price;
-    protected int quantity;  // Add quantity field
+    protected int quantity;
 
     public Product(String name, double price, int quantity) {
         this.name = name;
